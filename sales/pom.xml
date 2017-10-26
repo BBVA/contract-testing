@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bbva.labs.hyperscale.contract_testing</groupId>
+    <artifactId>sales-parent</artifactId>
+    <version>0.0.1</version>
+    <name>Sales service parent POM</name>
+    <packaging>pom</packaging>
+
+    <organization>
+        <name>Banco Bilbao Vizcaya Argentaria, S.A.</name>
+        <url>http://bbva.com</url>
+    </organization>
+    <inceptionYear>2017</inceptionYear>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Angel Lopez Cima</name>
+            <email>angel.lopez.cima@bbva.com</email>
+            <organization>BBVA</organization>
+        </developer>
+        <developer>
+            <name>Najim Aghmir El Yousfi</name>
+            <email>najim.aghmir@bbva.com</email>
+            <organization>BEEVA</organization>
+        </developer>
+    </developers>
+
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <encoding>UTF-8</encoding>
+        <scala.version>2.11.8</scala.version>
+        <scala.compat.version>2.11</scala.compat.version>
+    </properties>
+
+    <modules>
+        <module>service</module>
+        <module>cdc-provider-tests</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.14</version>
+                <configuration>
+                    <verbose>false</verbose>
+                    <includes>
+                        <includes>**/*.java</includes>
+                        <includes>**/*.scala</includes>
+                    </includes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>aggregate-third-party-report</id>
+                        <goals>
+                            <goal>aggregate-third-party-report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-core</artifactId>
+                        <version>1.6</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-site-renderer</artifactId>
+                        <version>1.6</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>compile</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

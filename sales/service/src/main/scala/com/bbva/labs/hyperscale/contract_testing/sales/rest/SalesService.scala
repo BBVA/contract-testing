@@ -1,0 +1,50 @@
+/*-
+ * #%L
+ * Sales Service
+ * %%
+ * Copyright (C) 2017 Banco Bilbao Vizcaya Argentaria, S.A.
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+package com.bbva.labs.hyperscale.contract_testing.sales.rest
+
+import akka.http.scaladsl.marshalling.{Marshaller, ToResponseMarshaller}
+import akka.http.scaladsl.model._
+import akka.http.scaladsl.server.Directives._
+import akka.http.scaladsl.server.Route
+import org.json4s.JValue
+import org.json4s.jackson.JsonMethods._
+
+import scala.io.Source
+
+object SalesService {
+    private val sales: JValue = parse(Source.fromInputStream(getClass.getResourceAsStream("/sales.json")).mkString)
+
+    implicit val toResponseMarshaller: ToResponseMarshaller[JValue] =
+        Marshaller.opaque {
+            json =>
+                val response = HttpResponse(StatusCodes.OK, entity = HttpEntity(ContentTypes.`application/json`, compact(render(json))))
+                response
+        }
+
+    val route: Route =
+        path("api" / "sales") {
+            get {
+                complete {
+                    println("GET /api/sales")
+                    sales
+                }
+            }
+        }
+}

@@ -1,0 +1,119 @@
+BBVA Contract-Testing users
+Copyright 2017 Banco Bilbao Vizcaya Argentaria S.A.
+
+This product includes software developed at
+BBVA (https://www.bbva.com/)
+
+
+This project includes:
+  akka-actor under Apache License, Version 2.0
+  akka-http under Apache-2.0
+  akka-http-core under Apache-2.0
+  akka-http-testkit under Apache-2.0
+  akka-kernel under Apache License, Version 2.0
+  akka-parsing under Apache-2.0
+  akka-stream under Apache License, Version 2.0
+  akka-stream-testkit under Apache License, Version 2.0
+  akka-testkit under Apache License, Version 2.0
+  Animal Sniffer Annotations under MIT license
+  Apache Commons Codec under The Apache Software License, Version 2.0
+  Apache Commons Collections under Apache License, Version 2.0
+  Apache Commons IO under Apache License, Version 2.0
+  Apache Commons Lang under Apache License, Version 2.0
+  Apache Commons Logging under The Apache Software License, Version 2.0
+  Apache Groovy under The Apache Software License, Version 2.0
+  Apache HttpClient under Apache License, Version 2.0
+  Apache HttpClient Fluent API under Apache License, Version 2.0
+  Apache HttpCore under Apache License, Version 2.0
+  Asynchronous Http Client under Apache License 2.0
+  Asynchronous Http Client Netty Utils under Apache License 2.0
+  Automaton under BSD
+  AWS Java SDK for Amazon S3 under Apache License, Version 2.0
+  AWS Java SDK for AWS KMS under Apache License, Version 2.0
+  AWS SDK for Java - Core under Apache License, Version 2.0
+  Commons BeanUtils under The Apache Software License, Version 2.0
+  Commons Collections under The Apache Software License, Version 2.0
+  Commons Lang under The Apache Software License, Version 2.0
+  config under Apache License, Version 2.0
+  error-prone annotations under Apache 2.0
+  ezmorph under The Apache Software License, Version 2.0
+  FindBugs-Annotations under GNU Lesser Public License
+  FindBugs-jsr305 under The Apache Software License, Version 2.0
+  Generex under The Apache Software License, Version 2.0
+  Gson under Apache 2.0
+  guava-retrying under The Apache Software License, Version 2.0
+  Guava: Google Core Libraries for Java under The Apache Software License, Version 2.0
+  Hamcrest Core under New BSD License
+  HTTP client framework for Groovy under The Apache Software License, Version 2.0
+  IntelliJ IDEA Annotations under The Apache Software License, Version 2.0
+  J2ObjC Annotations under The Apache Software License, Version 2.0
+  Jackson module: Paranamer under The Apache Software License, Version 2.0
+  Jackson-annotations under The Apache Software License, Version 2.0
+  Jackson-core under The Apache Software License, Version 2.0
+  jackson-databind under The Apache Software License, Version 2.0
+  Jackson-dataformat-CBOR under The Apache Software License, Version 2.0
+  jackson-module-scala under The Apache Software License, Version 2.0
+  jansi under The Apache Software License, Version 2.0
+  Java SemVer under The MIT License
+  java-diff-utils under The Apache Software License, Version 2.0
+  Javassist under MPL 1.1 or LGPL 2.1 or Apache License 2.0
+  JMES Path Query library under Apache License, Version 2.0
+  Joda-Time under Apache 2
+  jOOL under Apache License, Version 2.0
+  JSON in Java under The JSON License
+  json-lib under The Apache Software License, Version 2.0
+  json4s-ast under ASL
+  json4s-core under ASL
+  json4s-jackson under ASL
+  jsonpath under Apache 2
+  JUnit under Eclipse Public License 1.0
+  kotlin-logging under The Apache Software License, Version 2.0
+  Kotson under MIT
+  Neko HTML under The Apache Software License, Version 2.0
+  Netty Reactive Streams Implementation under Apache 2
+  Netty/Buffer under Apache License, Version 2.0
+  Netty/Codec under Apache License, Version 2.0
+  Netty/Codec/DNS under Apache License, Version 2.0
+  Netty/Codec/HTTP under Apache License, Version 2.0
+  Netty/Common under Apache License, Version 2.0
+  Netty/Handler under Apache License, Version 2.0
+  Netty/Resolver under Apache License, Version 2.0
+  Netty/Resolver/DNS under Apache License, Version 2.0
+  Netty/Transport under Apache License, Version 2.0
+  Netty/Transport/Native/Epoll under Apache License, Version 2.0
+  Netty/Transport/Native/Unix/Common under Apache License, Version 2.0
+  org.jetbrains.kotlin:kotlin-reflect under The Apache License, Version 2.0
+  org.jetbrains.kotlin:kotlin-stdlib under The Apache License, Version 2.0
+  org.jetbrains.kotlin:kotlin-stdlib-jre7 under The Apache License, Version 2.0
+  org.jetbrains.kotlin:kotlin-stdlib-jre8 under The Apache License, Version 2.0
+  pact-jvm-matchers_2.11 under Apache 2
+  pact-jvm-model under Apache 2
+  pact-jvm-pact-broker under Apache 2
+  pact-jvm-provider-junit_2.11 under Apache 2
+  pact-jvm-provider_2.11 under Apache 2
+  ParaNamer Core under BSD
+  reactive-streams under CC0
+  Reflections under WTFPL or The New BSD License
+  Scala Compiler under BSD 3-Clause
+  Scala Library under BSD 3-Clause
+  scala-java8-compat under BSD 3-clause
+  scala-logging under Apache 2.0 License
+  scala-parser-combinators under BSD 3-clause
+  scala-xml under BSD 3-clause
+  scalactic under the Apache License, ASL Version 2.0
+  ScalaMock Core under BSD-style
+  ScalaMock ScalaTest Support under BSD-style
+  Scalap under BSD 3-Clause
+  scalatest under the Apache License, ASL Version 2.0
+  SLF4J API Module under MIT License
+  ssl-config-core under Apache License, Version 2.0
+  unfiltered under MIT
+  unfiltered-netty under MIT
+  unfiltered-netty-server under MIT
+  unfiltered-util under MIT
+  User service parent POM under The Apache Software License, Version 2.0
+  Users Contract Testing under The Apache Software License, Version 2.0
+  Users Service under The Apache Software License, Version 2.0
+  Xerces2 Java Parser under The Apache Software License, Version 2.0
+  XML Commons External Components XML APIs under The Apache Software License, Version 2.0
+  XML Commons Resolver Component under The Apache Software License, Version 2.0

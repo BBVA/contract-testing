@@ -1,0 +1,37 @@
+[
+  {
+    "user-id": "user-1",
+    "purchases": [
+      {
+        "type": "Cloth",
+        "price": "24.99 EUR"
+      },
+      {
+        "type": "Toys",
+        "price": "45 EUR"
+      }
+    ]
+  },
+  {
+    "user-id": "user-2",
+    "purchases": [
+      {
+        "type": "Cloth",
+        "price": "19.99 EUR"
+      }
+    ]
+  },
+  {
+    "user-id": "user-3",
+    "purchases": [
+      {
+        "type": "Computer component",
+        "price": "1030 EUR"
+      },
+      {
+        "type": "Photography",
+        "price": "850 EUR"
+      }
+    ]
+  }
+]

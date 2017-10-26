@@ -1,0 +1,22 @@
+[
+    {
+        "id": "user-1",
+        "email": "user1@test.com",
+        "address": " 42 street WE"
+    },
+    {
+        "id": "user-2",
+        "email": "user2@test.com",
+        "address": " 124 street E"
+    },
+    {
+        "id": "user-3",
+        "email": "user3@test.com",
+        "address": " 546 street N"
+    },
+    {
+        "id": "user-4",
+        "email": "user4@test.com",
+        "address": " Cable street 32"
+    }
+]

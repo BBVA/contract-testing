@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  pact-broker:
+    image: dius/pact-broker:2.4.2-1
+    ports:
+      - 8383:80/tcp
+    environment:
+      PACT_BROKER_DATABASE_USERNAME: pact
+      PACT_BROKER_DATABASE_PASSWORD: pact
+      PACT_BROKER_DATABASE_HOST: postgres
+      PACT_BROKER_DATABASE_NAME: pact
+    links:
+      - PostgreSQL:postgres
+    networks:
+      - cdc-testing
+
+  PostgreSQL:
+    image: sameersbn/postgresql:9.6-1
+    environment:
+      DB_USER: pact
+      DB_PASS: pact
+      DB_NAME: pact
+    networks:
+      - cdc-testing
+
+networks:
+  cdc-testing:
+    external:
+      name: cdc-testing
